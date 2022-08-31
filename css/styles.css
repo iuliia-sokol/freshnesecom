@@ -63,7 +63,20 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* HEADER */
 
+.header-logo-link {
+  display: inline-block;
+  max-width: 177px;
+  max-height: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.header-logo-icon {
+  width: 177px;
+  height: 18px;
+  fill: #151515;
+}
 /* FOOTER */
 .footer-links {
   display: flex;

@@ -1,0 +1,74 @@
+/* Colors palette: */
+
+:root {
+}
+
+/* General */
+
+body {
+  font-family: font-family: 'Poppins', sans-serif;
+  color: var(--txt-main);
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Elements' common styles */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.list-general {
+  list-style: none;
+  padding-left: 0;
+}
+.btn-general {
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-general:hover,
+.btn-general:focus {
+
+}
+.links-general {
+  color: inherit;
+  text-decoration: none;
+}
+.links-selection:hover,
+.links-selection:focus {
+}
+.image-display {
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* FOOTER */
+.footer-links {
+  display: flex;
+}
+.product-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+}

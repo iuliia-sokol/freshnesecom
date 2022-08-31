@@ -6,6 +6,7 @@
   --main-white: #fff;
   --bg-light-grey: #F9F9F9;
   --accent-red: #E6704B;
+  --bg-tag-grey: #F5F5F5;
 }
 
 /* General */
@@ -202,4 +203,28 @@ margin-left: 40px;
 .product-tags {
   display: inline-flex;
   flex-wrap: wrap;
+}
+.tag-item {
+  display: inline-block;
+min-height: 26px;
+padding: 4px 10px;
+margin-bottom: 16px;
+background-color: var(--bg-tag-grey);
+border-radius: 12px;
+}
+.tag-item + .tag-item {
+  margin-left: 26px;
+}
+.tag-item:nth-child(13) {
+  margin-left: 0;
+}
+.tag-item:nth-last-child(-n + 7) {
+  margin-bottom: 0;
+}
+.tag-link {
+text-align: end;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.5;
+color: var(--main-black);
 }

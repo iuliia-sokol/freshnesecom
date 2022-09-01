@@ -370,7 +370,7 @@ h2 {
   padding-top: 64px;
   padding-bottom: 64px;
 }
-.feedback div:first-child {
+.feedback .container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 32px;
@@ -403,10 +403,12 @@ h2 {
   margin: 0 auto;
   position: relative;
   overflow-x: visible;
+  /* transition: transform 3000ms; */
   /* overflow: hidden; */
 }
 .slider-track {
   display: flex;
+  margin-bottom: 0;
 }
 .feedback-item {
   flex-direction: column;

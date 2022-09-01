@@ -8,6 +8,7 @@
   --accent-green: #6a983c;
   --btn-border-green: #92c064;
   --buy-btn-border-green: #46760a;
+  --quote-border-grey: #f1f1f1;
   --discount-bg-green: #f4f8ec;
   --main-white: #fff;
   --bg-light-grey: #f9f9f9;
@@ -271,7 +272,7 @@ h2 {
   fill: none;
   stroke: var(--btn-border-green);
 }
-/* Best sellers */
+/* Best sellers & Farm products */
 .best-sellers .container,
 .farm-products .container {
   display: flex;
@@ -363,6 +364,69 @@ h2 {
   line-height: 1.47;
   color: var(--main-white);
   text-align: center;
+}
+/* Feedback slider */
+.feedback {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.feedback div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.feedback h2 {
+  margin: 0;
+}
+.feedback-item {
+  display: block;
+  width: 369px;
+  max-height: 198px;
+  padding: 24px 32px 0px 32px;
+  position: relative;
+  z-index: 0;
+  background-color: var(--main-white);
+  border: 1px solid var(--quote-border-grey);
+  border-radius: 12px;
+}
+.feedback-item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+.feedback-item:nth-child(1)::after {
+  background-image: url(/images/customer1.jpg);
+}
+.feedback-item:nth-child(2)::after {
+  background-image: url(/images/customer2.jpg);
+}
+.feedback-item:nth-child(3)::after {
+  background-image: url(/images/customer3.jpg);
+}
+.feedback-item:nth-child(4)::after {
+  background-image: url(/images/customer4.jpg);
+}
+.feedback-item .quote {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.47;
+  text-align: center;
+}
+.feedback-item .name {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-pale-grey);
 }
 /* FOOTER */
 footer .container {

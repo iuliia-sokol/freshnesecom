@@ -27,7 +27,7 @@
 <path stroke="#fff" style="stroke: var(--main-white)" stroke-linejoin="bevel" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5385" d="M9.271 19.306l3.372-3.372c0.147-0.148 0.238-0.353 0.238-0.578s-0.091-0.43-0.238-0.579l-3.282-3.282"></path>
 </symbol>
 <symbol id="icon-slider-left" viewBox="0 0 21 32">
-<path d="M0 0.615h12.308c4.078 0 7.385 3.306 7.385 7.385v14.769c0 4.078-3.306 7.385-7.385 7.385h-12.308v-29.538z"></path>
+<path  d="M0 0.615h12.308c4.078 0 7.385 3.306 7.385 7.385v14.769c0 4.078-3.306 7.385-7.385 7.385h-12.308v-29.538z"></path>
 <path stroke="#fff" style="stroke: var(--main-white)" stroke-linejoin="bevel" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5385" d="M11.651 11.463l-3.372 3.372c-0.148 0.148-0.239 0.353-0.239 0.578s0.091 0.43 0.239 0.579l3.282 3.282"></path>
 </symbol>
 </defs>

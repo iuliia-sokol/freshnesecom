@@ -1,6 +1,6 @@
 let position = 0;
-const slidesToShow = 2;
-const slidesToScroll = 1;
+const slidesToShow = 3;
+const slidesToScroll = 2;
 const container = document.querySelector(".feedback-slider");
 const track = document.querySelector(".slider-track");
 const items = document.querySelectorAll(".feedback-item");
@@ -9,7 +9,6 @@ const btnNext = document.querySelector(".btn-next");
 const itemsCount = items.length;
 const itemWidth = container.clientWidth / slidesToShow;
 const movePosition = slidesToScroll * itemWidth;
-console.log(itemWidth);
 
 items.forEach((item) => {
   item.style.minWidth = `$(itemWidth)px`;

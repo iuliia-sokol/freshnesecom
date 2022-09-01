@@ -378,16 +378,28 @@ h2 {
 .feedback h2 {
   margin: 0;
 }
+.feedback-slider {
+  width: 1170px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+.slider-track {
+  display: flex;
+}
 .feedback-item {
-  display: block;
-  width: 369px;
-  max-height: 198px;
-  padding: 24px 32px 0px 32px;
+  flex-direction: column;
+  min-width: 369px;
+  max-height: 222px;
+  padding: 24px 32px 40px 32px;
+  margin-bottom: 24px;
   position: relative;
   z-index: 0;
   background-color: var(--main-white);
   border: 1px solid var(--quote-border-grey);
   border-radius: 12px;
+}
+.feedback-item + .feedback-item {
+  margin-left: 32px;
 }
 .feedback-item::after {
   content: "";
@@ -421,7 +433,6 @@ h2 {
   text-align: center;
 }
 .feedback-item .name {
-  margin-bottom: 40px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;

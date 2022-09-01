@@ -19,6 +19,9 @@
 <symbol id="icon-black-arrow-right" viewBox="0 0 22 32">
 <path stroke="#151515" style="stroke: var(--main-black)" stroke-linejoin="bevel" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.3333" d="M6.506 26.198l8.768-8.768c0.383-0.386 0.62-0.917 0.62-1.504s-0.237-1.118-0.62-1.504l-8.531-8.534"></path>
 </symbol>
+<symbol id="icon-green-arrow-right" viewBox="0 0 22 32">
+<path stroke="#92c064" style="stroke: var(---tn-border-green)" stroke-linejoin="bevel" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.3333" d="M6.506 26.198l8.768-8.768c0.383-0.386 0.62-0.917 0.62-1.504s-0.237-1.118-0.62-1.504l-8.531-8.534"></path>
+</symbol>
 <symbol id="icon-slide-left" viewBox="0 0 21 32">
 <path d="M0 0.615h12.308c4.078 0 7.385 3.306 7.385 7.385v14.769c0 4.078-3.306 7.385-7.385 7.385h-12.308v-29.538z"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="bevel" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5385" d="M11.651 11.463l-3.372 3.372c-0.148 0.148-0.239 0.353-0.239 0.578s0.091 0.43 0.239 0.579l3.282 3.282"></path>

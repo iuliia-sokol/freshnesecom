@@ -246,7 +246,7 @@ h2 {
   color: var(--accent-green);
   margin-bottom: 8px;
 }
-.hero-card-wrapper > h1 {
+.hero-card-wrapper > h2 {
   font-weight: 600;
   font-size: 22px;
   line-height: 1.5;

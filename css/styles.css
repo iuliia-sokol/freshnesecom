@@ -4,6 +4,7 @@
   --main-black: #151515;
   --text-secondary: #575757;
   --text-pale-grey: #a9a9a9;
+  --thumb-border-grey: #d1d1d1;
   --accent-green: #6a983c;
   --btn-border-green: #92c064;
   --buy-btn-border-green: #46760a;
@@ -271,29 +272,33 @@ h2 {
   stroke: var(--btn-border-green);
 }
 /* Best sellers */
-.best-sellers .container {
+.best-sellers .container,
+.farm-products .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 64px;
   padding-bottom: 64px;
 }
-.best-sellers-cards-wrapper {
+.best-sellers-cards-wrapper,
+.farm-products-cards-wrapper {
   width: 870px;
 }
-.best-sellers-cards {
+.best-sellers-cards,
+.farm-products-cards {
   display: flex;
 }
-.best-sellers-item {
+.best-sellers-item,
+.farm-products-item {
   display: block;
   width: calc((100%-64px) / 3);
-  max-height: 323px;
   padding: 16px;
   margin-bottom: 9px;
-  border: 1px solid #d1d1d1;
+  border: 1px solid var(--thumb-border-grey);
   border-radius: 12px;
 }
-.best-sellers-item + .best-sellers-item {
+.best-sellers-item + .best-sellers-item,
+.farm-products-item + .farm-products-item {
   margin-left: 32px;
 }
 .product-title {

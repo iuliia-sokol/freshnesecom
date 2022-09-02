@@ -60,11 +60,11 @@ const swiper = new Swiper(".swiper", {
     sensitivity: 1,
     eventsTarget: ".swiper-slide",
   },
-  autoplay: {
-    delay: 1500,
-    stopOnLastSlide: false,
-    disableOnInteraction: false,
-  },
+  //   autoplay: {
+  //     delay: 1200,
+  //     stopOnLastSlide: false,
+  //     disableOnInteraction: false,
+  //   },
   a11y: {
     enabled: true,
     prevSlideMessage: "Previous slide",
@@ -73,12 +73,22 @@ const swiper = new Swiper(".swiper", {
     lastSlideMessage: "This is the last slide",
   },
 });
+// let sliderBlock = document.querySelector(".swiper");
+// sliderBlock.addEventListener("mouseleave", function (e) {
+//   swiper.params.autoplay.disableOnInteraction = false;
+//   swiper.params.autoplay.delay = 1200;
+//   swiper.autoplay.start();
+// });
+// sliderBlock.addEventListener("mouseenter", function (e) {
+//   swiper.autoplay.stop();
+// });
+
 let sliderBlock = document.querySelector(".swiper");
-sliderBlock.addEventListener("mouseleave", function (e) {
+sliderBlock.addEventListener("mouseenter", function (e) {
   swiper.params.autoplay.disableOnInteraction = false;
-  swiper.params.autoplay.delay = 1500;
+  swiper.params.autoplay.delay = 1200;
   swiper.autoplay.start();
 });
-sliderBlock.addEventListener("mouseenter", function (e) {
+sliderBlock.addEventListener("mouseleave", function (e) {
   swiper.autoplay.stop();
 });

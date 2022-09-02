@@ -37,25 +37,48 @@
 // checkBtns();
 
 const swiper = new Swiper(".swiper", {
-  speed: 400,
+  speed: 1000,
   spaceBetween: 32,
   slidesPerView: 3,
+  slidesPerGroup: 1,
+  rewind: true,
   watchOverflow: true,
-  loop: true,
-
-  //   // If we need pagination
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //   },
-
-  // Navigation arrows
+  grabCursor: true,
+  simulateTouch: true,
+  initialSlide: 1,
+  //   setWrapperSize: false,
+  //   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
-  //   // And if we need scrollbar
-  //   scrollbar: {
-  //     el: ".swiper-scrollbar",
-  //   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  mousewheel: {
+    sensitivity: 1,
+    eventsTarget: ".swiper-slide",
+  },
+  autoplay: {
+    delay: 1500,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+  },
+  a11y: {
+    enabled: true,
+    prevSlideMessage: "Previous slide",
+    nextSlideMessage: "Next slide",
+    firstSlideMessage: "This is the first slide",
+    lastSlideMessage: "This is the last slide",
+  },
+});
+let sliderBlock = document.querySelector(".swiper");
+sliderBlock.addEventListener("mouseleave", function (e) {
+  swiper.params.autoplay.disableOnInteraction = false;
+  swiper.params.autoplay.delay = 1500;
+  swiper.autoplay.start();
+});
+sliderBlock.addEventListener("mouseenter", function (e) {
+  swiper.autoplay.stop();
 });

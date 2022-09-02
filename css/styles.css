@@ -369,6 +369,7 @@ h2 {
 .feedback {
   padding-top: 64px;
   padding-bottom: 64px;
+  overflow: hidden;
 }
 .feedback .container {
   display: flex;
@@ -409,6 +410,7 @@ h2 {
 .swiper-wrapper {
   display: flex;
   margin-bottom: 0;
+  min-width: 0;
 }
 .swiper-slide {
   flex-direction: column;

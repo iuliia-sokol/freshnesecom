@@ -552,6 +552,32 @@ h2 {
   padding-top: 64px;
   padding-bottom: 64px;
 }
+.articles-list {
+  display: flex;
+  justify-content: space-between;
+}
+/* .articles-list-item:first-child {
+  min-width: 469px;
+}
+.articles-list-item:first-child > a {
+  display: block;
+}
+.articles-list-item:nth-child(2) {
+  min-width: 269px;
+}
+.articles-list-item:nth-child(2) > a {
+  display: block;
+}
+.articles-list-item:nth-child(-n + 3) {
+  min-width: 369px;
+}
+.articles-list-item:nth-child(-n + 3) > a {
+  display: inline-flex;
+  flex-direction: column-reverse;
+}
+.articles-list-item + .articles-list-item {
+  margin-left: 31.5px;
+} */
 /* FOOTER */
 footer .container {
   padding-top: 64px;

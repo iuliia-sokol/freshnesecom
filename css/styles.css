@@ -560,7 +560,7 @@ h2 {
   margin-left: 31.5px;
 }
 .articles-list-item > img {
-  display: inline-block;
+  display: block;
 }
 .articles-sublist-item {
   flex-direction: column-reverse;
@@ -570,16 +570,8 @@ p.description {
   font-size: 12px;
   line-height: 1.33;
 }
-.articles-list-item:first-child article {
-  position: relative;
-}
-.articles-list-item:first-child div {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-}
-.articles-list-item:first-child p.description {
-  color: var(--main-white);
+.articles-list-item:first-child {
+  width: 469px;
 }
 .articles-list-item:first-child h3 {
   margin-bottom: 8px;
@@ -588,7 +580,7 @@ p.description {
   line-height: 1.5;
   color: var(--main-white);
 }
-p.tip {
+.articles-list-item:first-child p.tip {
   position: absolute;
   top: 24px;
   left: 24px;
@@ -604,25 +596,67 @@ p.tip {
   color: var(--accent-green);
   text-align: center;
 }
+.articles-list-item:first-child article {
+  position: relative;
+}
+.articles-list-item:first-child .description-wrapper {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+.articles-list-item:first-child .description-wrapper p.description {
+  color: var(--main-white);
+}
+.articles-list-item:first-child .description-wrapper > div {
+  display: flex;
+  align-items: center;
+}
+.articles-list-item:first-child .description-wrapper img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.articles-list-item:nth-child(2) {
+  width: 269px;
+}
+.articles-list-item:nth-child(2) img {
+  margin-bottom: 24px;
+}
 .articles-list-item:nth-child(2) h3 {
+  margin-bottom: 16px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
 }
-
-.articles-list-item:nth-child(2) p.category {
-  font-family: "Poppins";
+p.category {
+  display: inline-block;
+  padding: 0 8px;
+  background-color: var(--discount-bg-green);
+  border-radius: 12px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
   color: var(--accent-green);
+  text-align: center;
 }
+.articles-list-item:first-child p.category {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.articles-list-item:nth-child(2) p.category {
+  margin-bottom: 8px;
+}
+
 .articles-sublist-item h3 {
   font-weight: 500;
   font-size: 15px;
   line-height: 1.47;
 }
-
+time {
+  margin-left: 16px;
+}
 /* .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

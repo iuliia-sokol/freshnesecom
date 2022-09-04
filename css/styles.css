@@ -246,6 +246,7 @@ h2 {
   padding: 48px 32px 32px 32px;
   border-radius: 12px;
   background-image: url("../images/banner.jpg");
+  background-color: var(--btn-border-green);
 }
 .hero-card-wrapper > p {
   font-weight: 600;
@@ -330,6 +331,7 @@ h2 {
   margin-bottom: 16px;
   border-radius: 12px;
   background-image: url("../images/image-light.jpg");
+  background-color: var(--thumb-border-grey);
   position: relative;
 }
 .discount {
@@ -448,28 +450,43 @@ h2 {
 }
 .swiper-slide:nth-child(1)::after {
   background-image: url("../images/customer1.jpg");
+  background-color: var(--text-pale-grey);
+  background-position: center;
+  background-size: contain;
 }
 .swiper-slide:nth-child(2)::after {
   background-image: url("../images/customer2.jpg");
+  background-color: var(--text-pale-grey);
+  background-position: center;
+  background-size: contain;
 }
 .swiper-slide:nth-child(3)::after {
   background-image: url("../images/customer3.jpg");
+  background-color: var(--text-pale-grey);
+  background-position: center;
+  background-size: contain;
 }
 .swiper-slide:nth-child(4)::after {
   background-image: url("../images/customer4.jpg");
+  background-color: var(--text-pale-grey);
+  background-position: center;
+  background-size: contain;
 }
 .swiper-slide:nth-child(5)::after {
   background-image: url("../images/customer5.jpg");
+  background-color: var(--text-pale-grey);
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(6)::after {
   background-image: url("../images/customer6.jpg");
+  background-color: var(--text-pale-grey);
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(7)::after {
   background-image: url("../images/customer7.jpg");
+  background-color: var(--text-pale-grey);
   background-position: center;
   background-size: contain;
 }

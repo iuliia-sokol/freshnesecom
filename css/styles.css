@@ -287,7 +287,7 @@ h2 {
 .farm-products .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 64px;
   padding-bottom: 64px;
 }

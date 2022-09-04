@@ -245,7 +245,7 @@ h2 {
   height: 280px;
   padding: 48px 32px 32px 32px;
   border-radius: 12px;
-  background-image: url("./images/banner.jpg");
+  background-image: url("../images/banner.jpg");
 }
 .hero-card-wrapper > p {
   font-weight: 600;
@@ -329,7 +329,7 @@ h2 {
   height: 180px;
   margin-bottom: 16px;
   border-radius: 12px;
-  background-image: url("./images/image-light.jpg");
+  background-image: url("../images/image-light.jpg");
   position: relative;
 }
 .discount {
@@ -447,29 +447,29 @@ h2 {
   border-radius: 100%;
 }
 .swiper-slide:nth-child(1)::after {
-  background-image: url("./images/customer1.jpg");
+  background-image: url("../images/customer1.jpg");
 }
 .swiper-slide:nth-child(2)::after {
-  background-image: url("./images/customer2.jpg");
+  background-image: url("../images/customer2.jpg");
 }
 .swiper-slide:nth-child(3)::after {
-  background-image: url("./images/customer3.jpg");
+  background-image: url("../images/customer3.jpg");
 }
 .swiper-slide:nth-child(4)::after {
-  background-image: url("./images/customer4.jpg");
+  background-image: url("../images/customer4.jpg");
 }
 .swiper-slide:nth-child(5)::after {
-  background-image: url("./images/customer5.jpg");
+  background-image: url("../images/customer5.jpg");
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(6)::after {
-  background-image: url("./images/customer6.jpg");
+  background-image: url("../images/customer6.jpg");
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(7)::after {
-  background-image: url("./images/customer7.jpg");
+  background-image: url("../images/customer7.jpg");
   background-position: center;
   background-size: contain;
 }

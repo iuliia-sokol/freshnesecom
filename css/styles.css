@@ -570,6 +570,9 @@ p.description {
   font-size: 12px;
   line-height: 1.33;
 }
+time {
+  margin-left: 16px;
+}
 .articles-list-item:first-child {
   width: 469px;
 }
@@ -648,14 +651,25 @@ p.category {
 .articles-list-item:nth-child(2) p.category {
   margin-bottom: 8px;
 }
-
+.articles-sublist-item + .articles-sublist-item {
+  margin-top: 32px;
+}
 .articles-sublist-item h3 {
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.47;
 }
-time {
-  margin-left: 16px;
+.articles-sublist-item img {
+  margin-left: 24px;
+}
+.articles-sublist-item div {
+  padding-right: 24px;
+}
+.articles-sublist-item article {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 /* .parent {
   display: grid;

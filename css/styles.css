@@ -537,7 +537,6 @@ h2 {
 .random-products-cards {
   display: flex;
 }
-
 .random-products-item {
   display: block;
   width: calc((100%-96px) / 4);
@@ -547,6 +546,11 @@ h2 {
 }
 .random-products-item + .random-products-item {
   margin-left: 32px;
+}
+/* BLOG SECTION  */
+.blog .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 /* FOOTER */
 footer .container {

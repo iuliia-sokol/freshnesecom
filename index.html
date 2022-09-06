@@ -43,10 +43,22 @@
             </a>
           </li>
           <li class="header-input">
-            <form>
-              <label for="search">
-                <input type="text" name="search" id="search" />
-              </label>
+            <form action="javascript:void(0);">
+    <label for="search">All categories
+    <input id="search" name="search" list="categories" autocomplete="off" placeholder="Search Products, categories ..." />
+    </label>
+    <datalist id="categories">
+        <option>Bakery</option>
+        <option>Fruit and vegetables</option>
+        <option>Meat and fish</option>
+        <option>Drinks</option>
+        <option>Kitchen</option>
+        <option>Special nutrition</option>
+        <option>Baby</option>
+        <option>Pharmacy</option>
+    </datalist>
+    <button type="submit"></button>
+</form>
             </form>
           </li>
           <li>

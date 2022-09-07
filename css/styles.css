@@ -156,6 +156,25 @@ h2 {
   height: 18px;
   fill: var(--main-black);
 }
+/* .categories-list:focus,
+.categories-list:hover {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+/* .categories-list {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+} */
+
 .header-input {
   min-width: 500px;
 }
@@ -511,7 +530,11 @@ h2 {
   width: 88px;
   height: 227px;
   border: none;
-  background-image: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   opacity: 0.7;
   z-index: 0;
 }
@@ -522,7 +545,11 @@ h2 {
   width: 88px;
   height: 227px;
   border: none;
-  background-image: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   opacity: 0.7;
   z-index: 0;
 }

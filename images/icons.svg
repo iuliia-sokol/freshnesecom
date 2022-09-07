@@ -11,7 +11,7 @@
 <path stroke="#151515" style="stroke: var(--main-black)" stroke-linejoin="bevel" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.3333" d="M16 15.973c3.682 0 6.667-2.985 6.667-6.667s-2.985-6.667-6.667-6.667v0c-3.682 0-6.667 2.985-6.667 6.667s2.985 6.667 6.667 6.667v0z"></path>
 </symbol>
 <symbol id="icon-search" viewBox="0 0 32 32">
-<path stroke-linejoin="bevel" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M18.386 22.866c0.041 0.001 0.089 0.001 0.137 0.001 5.155 0 9.334-4.179 9.334-9.334s-4.179-9.334-9.334-9.334c-0.048 0-0.096 0-0.144 0.001l0.007-0c-5.096 0.077-9.197 4.226-9.197 9.333s4.101 9.256 9.19 9.333l0.007 0zM11.626 20.48l-6.252 6.254"></path>
+<path  fill="none" stroke="#151515" style="stroke: var(--main-black)" stroke-linejoin="bevel" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.3333" d="M18.386 22.866c0.041 0.001 0.089 0.001 0.137 0.001 5.155 0 9.334-4.179 9.334-9.334s-4.179-9.334-9.334-9.334c-0.048 0-0.096 0-0.144 0.001l0.007-0c-5.096 0.077-9.197 4.226-9.197 9.333s4.101 9.256 9.19 9.333l0.007 0zM11.626 20.48l-6.252 6.254"></path>
 </symbol>
 <symbol id="icon-green-arrow-down" viewBox="0 0 53 32">
 <path fill="none" stroke="#6a983c" style="stroke: var(--color1, #6a983c)" stroke-linejoin="bevel" stroke-linecap="round" stroke-miterlimit="4" stroke-width="13.3333" d="M9.669 8.176l14.613 14.613c0.643 0.639 1.529 1.033 2.507 1.033s1.864-0.395 2.507-1.033l14.224-14.218"></path>

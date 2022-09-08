@@ -476,7 +476,9 @@ h2 {
   min-width: 0;
 }
 .swiper-slide {
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-width: 369px;
   min-height: 222px;
   padding: 24px 32px 40px 32px;
@@ -487,6 +489,7 @@ h2 {
   border: 1px solid var(--quote-border-grey);
   border-radius: 12px;
 }
+
 .swiper-slide::after {
   content: "";
   position: absolute;
@@ -567,7 +570,6 @@ h2 {
   text-align: center;
 }
 .swiper-slide .name {
-  align-self: flex-end;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;

@@ -37,7 +37,7 @@
 // checkBtns();
 
 const swiper = new Swiper(".swiper", {
-  speed: 1000,
+  speed: 1200,
   spaceBetween: 32,
   slidesPerView: 3,
   slidesPerGroup: 1,

@@ -60,8 +60,8 @@
               </svg>
             </a>
           </li>
-          <li class="header-input">
-            <div class="form-wrapper">
+          <li class="header-search">
+            <div class="search-form-wrapper">
               <form
                 action="javascript:void(0);"
                 role="search"
@@ -73,7 +73,7 @@
                     id="categories-list"
                     class="select-list"
                   >
-                    <option value="all-categories" selected disabled>
+                    <option value="all-categories" selected>
                       All categories
                     </option>
                     <option value="bakery">Bakery</option>
@@ -87,35 +87,43 @@
                     <option value="baby">Baby</option>
                     <option value="pharmacy">Pharmacy</option>
                   </select>
-                </div>
-                <input
-                  type="text"
-                  id="search"
-                  name="search"
-                  list="categories"
-                  autocomplete="off"
-                  placeholder="Search Products, categories ..."
-                  class="search-input"
-                />
-                <datalist
-                  id="categories"
-                  class="categories-list visually-hidden"
-                >
-                  <option>Bakery</option>
-                  <option>Fruit and vegetables</option>
-                  <option>Meat and fish</option>
-                  <option>Drinks</option>
-                  <option>Kitchen</option>
-                  <option>Special nutrition</option>
-                  <option>Baby</option>
-                  <option>Pharmacy</option>
-                </datalist>
-
-                <button type="submit" aria-label="search button">
-                  <svg class="header-logo-icon">
-                    <use href="./images/icons.svg#icon-search"></use>
+                  <svg class="categories-icon">
+                    <use href="./images/icons.svg#icon-green-arrow-down"></use>
                   </svg>
-                </button>
+                </div>
+                <div class="search-input-wrapper">
+                  <input
+                    type="text"
+                    id="search"
+                    name="search"
+                    autocomplete="off"
+                    placeholder="Search Products, categories ..."
+                    class="search-input"
+                  />
+                  <!-- list="categories"
+                  <datalist
+                    id="categories"
+                    class="categories-list visually-hidden"
+                  >
+                    <option>Bakery</option>
+                    <option>Fruit and vegetables</option>
+                    <option>Meat and fish</option>
+                    <option>Drinks</option>
+                    <option>Kitchen</option>
+                    <option>Special nutrition</option>
+                    <option>Baby</option>
+                    <option>Pharmacy</option>
+                  </datalist> -->
+                  <button
+                    type="submit"
+                    aria-label="search button"
+                    class="search-btn"
+                  >
+                    <svg class="search-btn-icon">
+                      <use href="./images/icons.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </div>
               </form>
             </div>
           </li>

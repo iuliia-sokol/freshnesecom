@@ -61,20 +61,41 @@
             </a>
           </li>
           <li class="header-input">
-            <form
-              action="javascript:void(0);"
-              role="search"
-              class="header-search-form"
-            >
-              <label for="search"
-                >All categories
+            <div class="form-wrapper">
+              <form
+                action="javascript:void(0);"
+                role="search"
+                class="header-search-form"
+              >
+                <div class="select-list-wrapper">
+                  <select
+                    name="categories"
+                    id="categories-list"
+                    class="select-list"
+                  >
+                    <option value="all-categories" selected disabled>
+                      All categories
+                    </option>
+                    <option value="bakery">Bakery</option>
+                    <option value="fruits-vegetebles">
+                      Fruit and vegetables
+                    </option>
+                    <option value="meat-fish">Meat and fish</option>
+                    <option value="drinks">Drinks</option>
+                    <option value="kitchen">Kitchen</option>
+                    <option value="special-nutrition">Special nutrition</option>
+                    <option value="baby">Baby</option>
+                    <option value="pharmacy">Pharmacy</option>
+                  </select>
+                </div>
                 <input
-                  type="search"
+                  type="text"
                   id="search"
                   name="search"
                   list="categories"
                   autocomplete="off"
                   placeholder="Search Products, categories ..."
+                  class="search-input"
                 />
                 <datalist
                   id="categories"
@@ -89,13 +110,14 @@
                   <option>Baby</option>
                   <option>Pharmacy</option>
                 </datalist>
-              </label>
-              <button type="submit" aria-label="search button">
-                <svg class="header-logo-icon">
-                  <use href="./images/icons.svg#icon-search"></use>
-                </svg>
-              </button>
-            </form>
+
+                <button type="submit" aria-label="search button">
+                  <svg class="header-logo-icon">
+                    <use href="./images/icons.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
           </li>
           <li>
             <ul class="list-general header-user-bag-links">
@@ -195,7 +217,7 @@
       <!-- HERO SECTION -->
       <section class="hero">
         <div class="container">
-          <aside>
+          <div class="aside-wrapper">
             <h2>Category menu</h2>
             <ul class="list-general aside-links">
               <li><a href="" class="links-general">Bakery</a></li>
@@ -210,7 +232,7 @@
                 <use href="./images/icons.svg#icon-black-arrow-right"></use>
               </svg>
             </a>
-          </aside>
+          </div>
           <div class="hero-card-wrapper">
             <p>Banner subfocus</p>
             <h2>Space for heading</h2>
@@ -236,7 +258,7 @@
       <!-- BEST-SELLERS SECTION -->
       <section class="best-sellers">
         <div class="container">
-          <aside>
+          <div class="aside-wrapper">
             <h2>Best selling products</h2>
             <ul class="list-general aside-links">
               <li><a href="" class="links-general">Kitchen</a></li>
@@ -251,7 +273,7 @@
                 <use href="./images/icons.svg#icon-black-arrow-right"></use>
               </svg>
             </a>
-          </aside>
+          </div>
           <div class="best-sellers-cards-wrapper">
             <ul class="list-general best-sellers-cards">
               <li class="best-sellers-item">
@@ -310,7 +332,7 @@
       <!-- FARM PRODUCTS SECTION -->
       <section class="farm-products">
         <div class="container">
-          <aside>
+          <div class="aside-wrapper">
             <h2>Best from Farmers</h2>
             <ul class="list-general aside-links">
               <li><a href="" class="links-general">Carrots</a></li>
@@ -325,7 +347,7 @@
                 <use href="./images/icons.svg#icon-black-arrow-right"></use>
               </svg>
             </a>
-          </aside>
+          </div>
           <div class="farm-products-cards-wrapper">
             <ul class="list-general farm-products-cards">
               <li class="farm-products-item">

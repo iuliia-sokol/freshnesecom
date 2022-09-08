@@ -55,6 +55,10 @@ h2 {
   color: inherit;
   text-decoration: none;
 }
+.aside-wrapper {
+  flex-basis: 269px;
+  min-width: 269px;
+}
 .aside-links li {
   margin-bottom: 12px;
 }
@@ -156,6 +160,31 @@ h2 {
   height: 18px;
   fill: var(--main-black);
 }
+.form-wrapper {
+  min-width: 500px;
+  min-height: 42px;
+  padding: 11px 16px;
+  background: var(--bg-light-grey);
+  border: 1px solid var(--thumb-border-grey);
+  border-radius: 12px;
+}
+.select-list-wrapper {
+  min-width: 130px;
+}
+.select-list {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.467;
+}
+.search-input::placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.357;
+  color: var(--text-pale-grey);
+}
 /* .categories-list:focus,
 .categories-list:hover {
   position: absolute;
@@ -176,7 +205,6 @@ h2 {
 } */
 
 .header-input {
-  min-width: 500px;
 }
 .header-user-bag-links {
   display: flex;
@@ -256,11 +284,14 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 32px;
   padding-top: 64px;
   padding-bottom: 64px;
 }
+
 .hero-card-wrapper {
-  width: 419px;
+  flex-basis: 419px;
+  min-width: 419px;
   height: 280px;
   padding: 48px 32px 32px 32px;
   border-radius: 12px;
@@ -317,6 +348,7 @@ h2 {
 .best-sellers-cards,
 .farm-products-cards {
   display: flex;
+  column-gap: 32px;
 }
 .best-sellers-item,
 .farm-products-item {
@@ -327,10 +359,10 @@ h2 {
   border: 1px solid var(--thumb-border-grey);
   border-radius: 12px;
 }
-.best-sellers-item + .best-sellers-item,
+/* .best-sellers-item + .best-sellers-item,
 .farm-products-item + .farm-products-item {
   margin-left: 32px;
-}
+} */
 .product-title {
   font-weight: 500;
   font-size: 15px;
@@ -589,6 +621,7 @@ h2 {
 }
 .random-products-cards {
   display: flex;
+  column-gap: 32px;
 }
 .random-products-item {
   display: block;
@@ -597,9 +630,9 @@ h2 {
   border: 1px solid var(--thumb-border-grey);
   border-radius: 12px;
 }
-.random-products-item + .random-products-item {
+/* .random-products-item + .random-products-item {
   margin-left: 32px;
-}
+} */
 /* BLOG SECTION  */
 
 .blog .container {
@@ -609,10 +642,11 @@ h2 {
 .articles-list {
   display: flex;
   justify-content: space-between;
+  column-gap: 31.5px;
 }
-.articles-list-item + .articles-list-item {
+/* .articles-list-item + .articles-list-item {
   margin-left: 31.5px;
-}
+} */
 .articles-list-item > img {
   display: block;
 }

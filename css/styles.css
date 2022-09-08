@@ -224,10 +224,13 @@ h2 {
   transform: translateY(-50%);
   pointer-events: none;
   opacity: 1;
-  transition: opacity 250ms linear;
+  transition: opacity 250ms linear, transform 300ms linear;
 }
+.select-list:hover + .categories-icon,
 .select-list:focus + .categories-icon {
-  opacity: 0.1;
+  opacity: 0.5;
+  transform: translateY(-50%) rotate(90deg) translateY(-50%);
+  opacity 250ms linear, transform 300ms linear;
 }
 .search-input-wrapper {
   display: flex;
@@ -240,6 +243,7 @@ h2 {
 .search-input {
   width: 252px;
   border: none;
+  outline: none;
   background-color: transparent;
 }
 .search-btn {
@@ -253,6 +257,12 @@ h2 {
 .search-btn-icon {
   width: 16px;
   height: 16px;
+  transition: transform 150ms linear;
+}
+.search-btn:hover .search-btn-icon,
+.search-btn:focus .search-btn-icon {
+  transform: scale(1.5);
+  transition: transform 250ms linear;
 }
 /* .select-list-wrapper::after {
   content: "";
@@ -302,6 +312,13 @@ h2 {
   min-width: 24px;
   min-height: 24px;
 }
+.header-user-link:hover .user-icon,
+.header-bag-link:hover .bag-icon,
+.header-user-link:focus .user-icon,
+.header-bag-link:focus .bag-icon {
+  transform: scale(1.5);
+  transition: transform 250ms linear;
+}
 .header-user-link {
   margin-right: 40px;
 }
@@ -309,6 +326,7 @@ h2 {
   width: 18px;
   height: 20px;
   fill: none;
+  transition: transform 250ms linear;
 }
 .header-bag {
   position: relative;
@@ -319,6 +337,7 @@ h2 {
   width: 20px;
   height: 18px;
   fill: none;
+  transition: transform 250ms linear;
 }
 .header-bag-mark {
   position: absolute;

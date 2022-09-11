@@ -1,21 +1,118 @@
-/* Middle links */
+/* Middle bar */
 
-.header-middle-links {
+.middle-bar {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  & .logo {
+    display: inline-block;
+    max-width: 177px;
+    max-height: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &__icon {
+      width: 177px;
+      height: 18px;
+      fill: $main-black;
+    }
+  }
 }
-.header-logo-link {
-  display: inline-block;
-  max-width: 177px;
-  max-height: 50px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+.search {
+  &__form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 500px;
+    height: 42px;
+    padding: 11px 16px;
+    background: $bg-light-grey;
+    border: 1px solid $thumb-border-grey;
+    border-radius: 12px;
+  }
+
+  &__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    margin-left: 24px;
+    border-left: 1px solid $thumb-border-grey;
+  }
+
+  &__input {
+    width: 252px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    &::placeholder {
+      font-family: "Open Sans";
+      font-size: 14px;
+      line-height: 1.357;
+      color: $text-pale-grey;
+    }
+  }
+
+  &__btn {
+    width: 16px;
+    height: 16px;
+    margin-left: 12px;
+    border: none;
+    background-color: transparent;
+    box-sizing: content-box;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 150ms linear;
+  }
+
+  &__btn:hover &__icon,
+  &__btn:focus &__icon {
+    transform: scale(1.5);
+    transition: transform 250ms linear;
+  }
 }
-.header-logo-icon {
-  width: 177px;
-  height: 18px;
-  fill: $main-black;
+
+.select {
+  display: inline-flex;
+  position: relative;
+
+  &__list {
+    min-width: 130px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.467;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+
+  &__icon {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 250ms linear, transform 300ms linear;
+  }
+
+  &__list:hover + &__icon,
+  &__list:focus + &__icon {
+    opacity: 0.5;
+    transform: translateY(-50%) rotate(90deg) translateY(-50%);
+    transition: opacity 250ms linear, transform 300ms linear;
+  }
 }

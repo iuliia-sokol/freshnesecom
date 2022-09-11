@@ -23,7 +23,7 @@
   <body>
     <header>
       <div class="container header">
-        <!-- HEADER UPPER LINKS -->
+        <!-- HEADER TOP BAR -->
         <div class="top-bar">
           <ul class="list-general contacts">
             <li class="contacts__item">
@@ -51,27 +51,27 @@
             </li>
           </ul>
         </div>
-        <!-- HEADER MIDDLE LINKS -->
-        <ul class="list-general header-middle-links">
-          <li>
-            <a href="./index.html" class="links-general header-logo-link">
-              <svg class="header-logo-icon">
+        <!-- HEADER MIDDLE BAR -->
+        <ul class="list-general middle-bar">
+          <li class="middle-bar__item">
+            <a href="./index.html" class="links-general logo">
+              <svg class="logo__icon">
                 <use href="./images/icons.svg#icon-freshnesecom"></use>
               </svg>
             </a>
           </li>
-          <li class="header-search">
-            <div class="search-form-wrapper">
+          <li class="middle-bar__item search">
+            <div class="search__wrapper">
               <form
                 action="javascript:void(0);"
                 role="search"
-                class="header-search-form"
+                class="search__form"
               >
-                <div class="select-list-wrapper">
+                <div class="select">
                   <select
                     name="categories"
                     id="categories-list"
-                    class="select-list"
+                    class="select__list"
                   >
                     <option value="all-categories" selected>
                       All categories
@@ -87,39 +87,25 @@
                     <option value="baby">Baby</option>
                     <option value="pharmacy">Pharmacy</option>
                   </select>
-                  <svg class="categories-icon">
+                  <svg class="select__icon">
                     <use href="./images/icons.svg#icon-green-arrow-down"></use>
                   </svg>
                 </div>
-                <div class="search-input-wrapper">
+                <div class="search__input-wrapper">
                   <input
                     type="text"
                     id="search"
                     name="search"
                     autocomplete="off"
                     placeholder="Search Products, categories ..."
-                    class="search-input"
+                    class="search__input"
                   />
-                  <!-- list="categories"
-                  <datalist
-                    id="categories"
-                    class="categories-list visually-hidden"
-                  >
-                    <option>Bakery</option>
-                    <option>Fruit and vegetables</option>
-                    <option>Meat and fish</option>
-                    <option>Drinks</option>
-                    <option>Kitchen</option>
-                    <option>Special nutrition</option>
-                    <option>Baby</option>
-                    <option>Pharmacy</option>
-                  </datalist> -->
                   <button
                     type="submit"
                     aria-label="search button"
-                    class="search-btn"
+                    class="search__btn"
                   >
-                    <svg class="search-btn-icon">
+                    <svg class="search__icon">
                       <use href="./images/icons.svg#icon-search"></use>
                     </svg>
                   </button>
@@ -127,7 +113,7 @@
               </form>
             </div>
           </li>
-          <li>
+          <li class="middle-bar__item">
             <ul class="list-general header-user-bag-links">
               <li>
                 <a href="" class="links-general header-user-link">

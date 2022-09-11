@@ -1,0 +1,37 @@
+/* Upper links */
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid hsla(0, 0%, 8%, 0.05);
+
+  & .contacts {
+    display: flex;
+    column-gap: 33px;
+
+    &__item {
+      font-family: "Open Sans";
+      font-size: 12px;
+      line-height: 1.33;
+      color: $main-black;
+    }
+
+    &__item:first-child {
+      color: $accent-green;
+    }
+  }
+
+  & .nav {
+    display: flex;
+    column-gap: 38px;
+
+    &__item {
+      font-family: "Open Sans";
+      font-size: 12px;
+      line-height: 1.33;
+      color: $accent-green;
+    }
+  }
+}

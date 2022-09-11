@@ -1,0 +1,16 @@
+.aside-wrapper {
+  flex-basis: 269px;
+  min-width: 269px;
+}
+.aside-links li {
+  margin-bottom: 12px;
+}
+.aside-links li:last-child {
+  margin-bottom: 48px;
+}
+.aside-links a {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.36;
+  color: $accent-green;
+}

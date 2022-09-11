@@ -1,0 +1,34 @@
+/* Upper links */
+
+.header-upper-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid hsla(0, 0%, 8%, 0.05);
+}
+
+.header-upper-links {
+  display: flex;
+}
+.upper-links-1 {
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 1.33;
+  color: $main-black;
+}
+.upper-links-1:first-child {
+  color: $accent-green;
+}
+.upper-links-1 + .upper-links-1 {
+  margin-left: 33px;
+}
+.upper-links-2 {
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 1.33;
+  color: $accent-green;
+}
+.upper-links-2 + .upper-links-2 {
+  margin-left: 38px;
+}

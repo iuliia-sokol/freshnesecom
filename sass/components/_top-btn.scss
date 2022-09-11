@@ -1,0 +1,20 @@
+.top-btn {
+  display: inline-block;
+  padding: 6.5px 12px;
+  background-color: $main-white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.47;
+  color: $main-black;
+  text-align: center;
+}
+.top-btn-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  transform: translate(0, 3px);
+  fill: none;
+  stroke: $accent-green;
+}

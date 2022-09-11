@@ -1,0 +1,21 @@
+/* Middle links */
+
+.header-middle-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.header-logo-link {
+  display: inline-block;
+  max-width: 177px;
+  max-height: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.header-logo-icon {
+  width: 177px;
+  height: 18px;
+  fill: $main-black;
+}

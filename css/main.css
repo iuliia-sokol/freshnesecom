@@ -74,18 +74,36 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 33px;
-     -moz-column-gap: 33px;
-          column-gap: 33px;
+  -webkit-column-gap: 38px;
+     -moz-column-gap: 38px;
+          column-gap: 38px;
 }
 .top-bar .contacts__item {
   font-family: "Open Sans";
   font-size: 12px;
   line-height: 1.33;
   color: #151515;
+  cursor: pointer;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: text-shadow, -webkit-transform;
+  transition-property: text-shadow, -webkit-transform;
+  transition-property: transform, text-shadow;
+  transition-property: transform, text-shadow, -webkit-transform;
 }
 .top-bar .contacts__item:first-child {
   color: #6a983c;
+}
+.top-bar .contacts__item:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  text-shadow: 0px 1px 3px rgba(70, 118, 10, 0.12);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: text-shadow, -webkit-transform;
+  transition-property: text-shadow, -webkit-transform;
+  transition-property: transform, text-shadow;
+  transition-property: transform, text-shadow, -webkit-transform;
 }
 .top-bar .nav {
   display: -webkit-box;
@@ -100,6 +118,23 @@ h2 {
   font-size: 12px;
   line-height: 1.33;
   color: #6a983c;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: text-shadow, -webkit-transform;
+  transition-property: text-shadow, -webkit-transform;
+  transition-property: transform, text-shadow;
+  transition-property: transform, text-shadow, -webkit-transform;
+}
+.top-bar .nav__item:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  text-shadow: 0px 1px 3px rgba(70, 118, 10, 0.12);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: text-shadow, -webkit-transform;
+  transition-property: text-shadow, -webkit-transform;
+  transition-property: transform, text-shadow;
+  transition-property: transform, text-shadow, -webkit-transform;
 }
 
 /* Middle bar */
@@ -214,8 +249,8 @@ h2 {
   transition: transform 150ms linear, -webkit-transform 150ms linear;
 }
 .search__btn:hover .search__icon, .search__btn:focus .search__icon {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   -webkit-transition: -webkit-transform 250ms linear;
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
@@ -260,72 +295,50 @@ h2 {
   opacity: 0.5;
   -webkit-transform: translateY(-50%) rotate(90deg) translateY(-50%);
           transform: translateY(-50%) rotate(90deg) translateY(-50%);
-  -webkit-transition: opacity 250ms linear, -webkit-transform 300ms linear;
-  transition: opacity 250ms linear, -webkit-transform 300ms linear;
-  transition: opacity 250ms linear, transform 300ms linear;
-  transition: opacity 250ms linear, transform 300ms linear, -webkit-transform 300ms linear;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
 }
 
-.header-user-bag-links {
+.controls__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
 }
-
-.header-user-link,
-.header-bag-link {
+.controls__link {
   display: inline-block;
   min-width: 24px;
   min-height: 24px;
 }
-
-.header-user-link:hover .user-icon,
-.header-bag-link:hover .bag-icon,
-.header-user-link:focus .user-icon,
-.header-bag-link:focus .bag-icon {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-user-link {
-  margin-right: 40px;
-}
-
-.user-icon {
-  width: 18px;
-  height: 20px;
+.controls__icon {
+  width: 20px;
+  height: 18px;
   fill: none;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-bag {
+.controls__link:hover .controls__icon, .controls__link:hover .controls__icon, .controls__link:focus .controls__icon, .controls__link:focus .controls__icon {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.controls__item--bag {
   position: relative;
   min-width: 30px;
   min-height: 30px;
 }
-
-.bag-icon {
-  width: 20px;
-  height: 18px;
-  fill: none;
-  -webkit-transition: -webkit-transform 250ms linear;
-  transition: -webkit-transform 250ms linear;
-  transition: transform 250ms linear;
-  transition: transform 250ms linear, -webkit-transform 250ms linear;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-bag-mark {
+.controls__indicator {
   position: absolute;
   bottom: 3px;
   left: -6px;
@@ -340,6 +353,14 @@ h2 {
   text-align: center;
   font-size: 12px;
   color: #fff;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+.controls__link:hover .controls__indicator, .controls__link:focus .controls__indicator {
+  -webkit-transform: rotate(360deg) scale(1.1);
+          transform: rotate(360deg) scale(1.1);
 }
 
 .aside-wrapper {

@@ -35,9 +35,11 @@
     background: $bg-light-grey;
     border: 1px solid $thumb-border-grey;
     border-radius: 12px;
-    // border-bottom-left-radius: 0;
   }
 
+  &__form--selected {
+    border-bottom-left-radius: 0;
+  }
   &__input-wrapper {
     display: flex;
     justify-content: space-between;
@@ -193,7 +195,7 @@
   }
 
   &__list--visible {
-    display: block;
+    display: inline-block;
   }
 
   // &:hover &__list,

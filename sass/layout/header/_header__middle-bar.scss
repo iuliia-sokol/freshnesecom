@@ -3,7 +3,7 @@
 .middle-bar {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -51,6 +51,10 @@
     border: none;
     outline: none;
     background-color: transparent;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 1.357;
+    color: $main-black;
 
     &::placeholder {
       font-family: "Open Sans";
@@ -91,7 +95,7 @@
   &__list {
     min-width: 130px;
     border: none;
-    outline: none;
+
     background-color: transparent;
     font-weight: 700;
     font-size: 15px;
@@ -118,9 +122,13 @@
   &__list:focus + &__icon {
     opacity: 0.5;
     transform: translateY(-50%) rotate(90deg) translateY(-50%);
-    @include transition(opacity, transform)
-      // transition: opacity 250ms linear, transform 300ms linear;
-;
+    @include transition(opacity, transform);
+    // transition: opacity 250ms linear, transform 300ms linear;
+  }
+
+  &__option {
+    background-color: yellow;
+    border: none;
   }
 }
 

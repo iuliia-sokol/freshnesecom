@@ -30,11 +30,9 @@
               <a href="" class="links-general contacts__link">Chat with us</a>
             </li>
             <li class="contacts__item">
-              <a
-                href="tel:+420336775664"
-                class="links-general contacts__link"
-              ></a
-              >+420 336 775 664
+              <a href="tel:+380447777666" class="links-general contacts__link"
+                >+38 044 7777 666</a
+              >
             </li>
             <li class="contacts__item">
               <a
@@ -77,20 +75,37 @@
                     name="categories"
                     id="categories-list"
                     class="select__list"
+                    onchange="document.getElementById('search').value= this.value"
                   >
-                    <option value="all-categories" selected>
+                    <option
+                      value="all categories"
+                      selected
+                      class="select__option"
+                    >
                       All categories
                     </option>
-                    <option value="bakery">Bakery</option>
-                    <option value="fruits-vegetebles">
+                    <option value="bakery" class="select__option">
+                      Bakery
+                    </option>
+                    <option value="fruit and vegetables" class="select__option">
                       Fruit and vegetables
                     </option>
-                    <option value="meat-fish">Meat and fish</option>
-                    <option value="drinks">Drinks</option>
-                    <option value="kitchen">Kitchen</option>
-                    <option value="special-nutrition">Special nutrition</option>
-                    <option value="baby">Baby</option>
-                    <option value="pharmacy">Pharmacy</option>
+                    <option value="meat and fish" class="select__option">
+                      Meat and fish
+                    </option>
+                    <option value="drinks" class="select__option">
+                      Drinks
+                    </option>
+                    <option value="kitchen" class="select__option">
+                      Kitchen
+                    </option>
+                    <option value="special nutrition" class="select__option">
+                      Special nutrition
+                    </option>
+                    <option value="baby" class="select__option">Baby</option>
+                    <option value="pharmacy" class="select__option">
+                      Pharmacy
+                    </option>
                   </select>
                   <svg class="select__icon">
                     <use href="./images/icons.svg#icon-green-arrow-down"></use>

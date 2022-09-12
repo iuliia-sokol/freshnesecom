@@ -27,22 +27,23 @@
 .search {
   &__form {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     min-width: 500px;
     height: 42px;
-    padding: 11px 16px;
+    padding: 10px 16px;
     background: $bg-light-grey;
     border: 1px solid $thumb-border-grey;
     border-radius: 12px;
+    // border-bottom-left-radius: 0;
   }
 
   &__input-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 24px;
-    margin-left: 24px;
+    padding-left: 23px;
+    margin-left: 23px;
     border-left: 1px solid $thumb-border-grey;
   }
 
@@ -67,7 +68,8 @@
   &__btn {
     width: 16px;
     height: 16px;
-    margin-left: 12px;
+    padding-left: 0;
+    padding-right: 0;
     border: none;
     background-color: transparent;
     box-sizing: content-box;
@@ -88,47 +90,133 @@
 
 // SELECT LIST
 
+// .select {
+//   display: inline-flex;
+//   position: relative;
+
+//   &__list {
+//     min-width: 130px;
+//     border: none;
+
+//     background-color: transparent;
+//     font-weight: 700;
+//     font-size: 15px;
+//     line-height: 1.467;
+//     appearance: none;
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//   }
+
+//   &__icon {
+//     margin-left: 8px;
+//     width: 16px;
+//     height: 16px;
+//     position: absolute;
+//     top: 50%;
+//     right: 0;
+//     transform: translateY(-50%);
+//     pointer-events: none;
+//     opacity: 1;
+//     transition: opacity 250ms linear, transform 300ms linear;
+//   }
+
+//   &__list:hover + &__icon,
+//   &__list:focus + &__icon {
+//     opacity: 0.5;
+//     transform: translateY(-50%) rotate(90deg) translateY(-50%);
+//     @include transition(opacity, transform);
+//     // transition: opacity 250ms linear, transform 300ms linear;
+//   }
+
+//   &__option {
+//     border: none;
+//   }
+// }
+
 .select {
-  display: inline-flex;
+  white-space: nowrap;
   position: relative;
 
-  &__list {
-    min-width: 130px;
+  &__btn {
+    display: inline-flex;
+    justify-content: flex-start;
+    min-width: 100%;
+    padding-left: 0;
+    padding-right: 24px;
     border: none;
-
     background-color: transparent;
+    text-align: left;
     font-weight: 700;
     font-size: 15px;
     line-height: 1.467;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
   }
 
   &__icon {
-    margin-left: 8px;
     width: 16px;
     height: 16px;
+    // margin-right: 12px;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    pointer-events: none;
+    // pointer-events: none;
     opacity: 1;
     transition: opacity 250ms linear, transform 300ms linear;
   }
-
-  &__list:hover + &__icon,
-  &__list:focus + &__icon {
-    opacity: 0.5;
+  &__btn:hover + &__icon,
+  &__btn:focus + &__icon,
+  &__btn:active + &__icon {
     transform: translateY(-50%) rotate(90deg) translateY(-50%);
     @include transition(opacity, transform);
     // transition: opacity 250ms linear, transform 300ms linear;
   }
 
+  &__list {
+    display: none;
+    width: fit-content;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: -17px;
+    transform: translateY(10px);
+    border: 1px solid $thumb-border-grey;
+    border-top: none;
+    background-color: rgba(249, 249, 249, 0.5);
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.467;
+    cursor: pointer;
+    z-index: 1;
+    @include transition(opacity);
+  }
+
+  &__list--visible {
+    display: block;
+  }
+
+  // &:hover &__list,
+  // &:focus &__list {
+  //   opacity: 1;
+  //   @include transition(opacity);
+  // }
+
   &__option {
-    background-color: yellow;
-    border: none;
+    padding: 9px 16px;
+    background-color: $bg-light-grey;
+    border-bottom: 1px solid $thumb-border-grey;
+  }
+  &__option:first-child {
+    border-radius: 12px 12px 0px 0px;
+  }
+  &__option:last-child {
+    border-bottom: none;
+    border-radius: 0px 0px 12px 12px;
+  }
+  &__option:hover,
+  &__option:focus {
+    background-color: $discount-bg-green;
   }
 }
 

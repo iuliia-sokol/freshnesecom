@@ -71,7 +71,39 @@
                 class="search__form"
               >
                 <div class="select">
-                  <select
+                  <button class="select__btn">All categories</button>
+                  <svg class="select__icon">
+                    <use href="./images/icons.svg#icon-green-arrow-down"></use>
+                  </svg>
+                  <ul class="list-general select__list">
+                    <li data-value="all categories" class="select__option">
+                      All categories
+                    </li>
+                    <li data-value="bakery" class="select__option">Bakery</li>
+                    <li
+                      data-value="fruit and vegetables"
+                      class="select__option"
+                    >
+                      Fruit and vegetables
+                    </li>
+                    <li data-value="meat and fish" class="select__option">
+                      Meat and fish
+                    </li>
+                    <li data-value="drinks" class="select__option">Drinks</li>
+                    <li data-value="kitchen" class="select__option">Kitchen</li>
+                    <li data-value="special nutrition" class="select__option">
+                      Special nutrition
+                    </li>
+                    <li data-value="baby" class="select__option">Baby</li>
+                    <li data-value="pharmacy" class="select__option">
+                      Pharmacy
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 
+                    <div class="select">
+                    <select
                     name="categories"
                     id="categories-list"
                     class="select__list"
@@ -110,7 +142,8 @@
                   <svg class="select__icon">
                     <use href="./images/icons.svg#icon-green-arrow-down"></use>
                   </svg>
-                </div>
+                </div> -->
+
                 <div class="search__input-wrapper">
                   <input
                     type="text"
@@ -867,5 +900,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./slider.js"></script>
+    <script src="./search_select.js"></script>
   </body>
 </html>

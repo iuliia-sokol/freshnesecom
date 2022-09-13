@@ -443,7 +443,7 @@
                       <div class="product__price-wrapper">
                         <p class="product__new-price">1.48 USD</p>
                       </div>
-                      <button href="" class="buy-btn">Buy now</button>
+                      <button class="buy-btn" type="button">Buy now</button>
                     </div>
                   </div>
                 </article>
@@ -469,7 +469,7 @@
                         <p class="product__new-price">0.28 USD</p>
                         <p class="product__old-price">0.44 USD</p>
                       </div>
-                      <button href="" class="buy-btn">Buy now</button>
+                      <button type="button" class="buy-btn">Buy now</button>
                     </div>
                   </div>
                 </article>
@@ -495,7 +495,7 @@
                         <p class="product__new-price">1.12 USD</p>
                         <p class="product__old-price">1.48 USD</p>
                       </div>
-                      <button href="" class="buy-btn">Buy now</button>
+                      <button type="button" class="buy-btn">Buy now</button>
                     </div>
                   </div>
                 </article>
@@ -549,7 +549,7 @@
                       <div class="product__price-wrapper">
                         <p class="product__new-price">1.48 USD</p>
                       </div>
-                      <button href="" class="buy-btn">Buy now</button>
+                      <button type="button" class="buy-btn">Buy now</button>
                     </div>
                   </div>
                 </article>
@@ -575,7 +575,7 @@
                         <p class="product__new-price">0.28 USD</p>
                         <p class="product__old-price">0.44 USD</p>
                       </div>
-                      <button href="" class="buy-btn">Buy now</button>
+                      <button type="button" class="buy-btn">Buy now</button>
                     </div>
                   </div>
                 </article>
@@ -601,7 +601,7 @@
                         <p class="product__new-price">1.12 USD</p>
                         <p class="product__old-price">1.48 USD</p>
                       </div>
-                      <button href="" class="buy-btn">Buy now</button>
+                      <button type="button" class="buy-btn">Buy now</button>
                     </div>
                   </div>
                 </article>
@@ -737,86 +737,123 @@
           </div>
         </div>
       </section>
-      <!-- RANDOM PRODUCTS SECTION -->
-      <section class="random-products">
-        <div class="container">
-          <div class="section-header-wrapper">
-            <h2>Hot deals</h2>
-            <button class="top-btn">
+      <!-- SALE SECTION -->
+      <section class="sale">
+        <div class="container sale__container">
+          <div class="sale__header">
+            <h2 class="sale__title">Hot deals</h2>
+            <button type="button" class="top-btn">
               See all offers
-              <svg class="top-btn-icon">
+              <svg class="top-btn__icon">
                 <use href="./images/icons.svg#icon-green-arrow-right"></use>
               </svg>
             </button>
           </div>
-          <div class="cards-wrapper">
-            <ul class="list-general random-products-cards">
-              <li class="random-products-item">
-                <a href="" class="links-general random-prod-link">
-                  <div class="pic-wrapper"></div>
-                  <h3 class="product-title">Product Title</h3>
-                  <p class="product-descr">
-                    Space for a small product description
-                  </p>
-                </a>
-                <div class="price-buy-wrapper">
-                  <p class="price-tag">3.26 USD</p>
-                  <a href="" class="links-general buy-btn">Buy now</a>
-                </div>
+          <div class="cards">
+            <ul class="list-general cards__list">
+              <li class="cards__item cards__item--quatro">
+                <article class="product">
+                  <div class="product__thumb">
+                    <a href="" class="links-general product__link">
+                      <div class="product__img-wrapper">
+                        <div
+                          class="product__discount animate__animated animate__heartBeat"
+                        >
+                          - 65 %
+                        </div>
+                      </div>
+                      <h3 class="product__title">Product Title</h3>
+                    </a>
+                    <p class="product__description">
+                      Space for a small product description
+                    </p>
+                    <div class="product__price-tag">
+                      <div class="product__price-wrapper">
+                        <p class="product__new-price">2.20 USD</p>
+                        <p class="product__old-price">6.40 USD</p>
+                      </div>
+                      <button type="button" class="buy-btn">Buy now</button>
+                    </div>
+                  </div>
+                </article>
               </li>
-              <li class="random-products-item">
-                <a href="" class="links-general random-prod-link">
-                  <div class="pic-wrapper">
-                    <!-- <div class="discount">- 36 %</div> -->
+              <li class="cards__item cards__item--quatro">
+                <article class="product">
+                  <div class="product__thumb">
+                    <a href="" class="links-general product__link">
+                      <div class="product__img-wrapper">
+                        <div
+                          class="product__discount animate__animated animate__heartBeat"
+                        >
+                          - 35 %
+                        </div>
+                      </div>
+                      <h3 class="product__title">Product Title</h3>
+                    </a>
+                    <p class="product__description">
+                      Space for a small product description
+                    </p>
+                    <div class="product__price-tag">
+                      <div class="product__price-wrapper">
+                        <p class="product__new-price">10 USD</p>
+                        <p class="product__old-price">15.50 USD</p>
+                      </div>
+                      <button type="button" class="buy-btn">Buy now</button>
+                    </div>
                   </div>
-                  <h3 class="product-title">Product Title</h3>
-                  <p class="product-descr">
-                    Space for a small product description
-                  </p>
-                </a>
-                <div class="price-buy-wrapper">
-                  <div class="price">
-                    <p class="price-tag">1.48 USD</p>
-                    <!-- <p class="old-price">48.56</p> -->
-                  </div>
-                  <a href="" class="links-general buy-btn">Buy now</a>
-                </div>
+                </article>
               </li>
-              <li class="random-products-item">
-                <a href="" class="links-general random-prod-link">
-                  <div class="pic-wrapper">
-                    <div class="discount">- 36 %</div>
+              <li class="cards__item cards__item--quatro">
+                <article class="product">
+                  <div class="product__thumb">
+                    <a href="" class="links-general product__link">
+                      <div class="product__img-wrapper">
+                        <div
+                          class="product__discount animate__animated animate__heartBeat"
+                        >
+                          - 40 %
+                        </div>
+                      </div>
+                      <h3 class="product__title">Product Title</h3>
+                    </a>
+                    <p class="product__description">
+                      Space for a small product description
+                    </p>
+                    <div class="product__price-tag">
+                      <div class="product__price-wrapper">
+                        <p class="product__new-price">12 USD</p>
+                        <p class="product__old-price">20 USD</p>
+                      </div>
+                      <button type="button" class="buy-btn">Buy now</button>
+                    </div>
                   </div>
-                  <h3 class="product-title">Product Title</h3>
-                  <p class="product-descr">
-                    Space for a small product description
-                  </p>
-                </a>
-                <div class="price-buy-wrapper">
-                  <div class="price">
-                    <p class="price-tag">0.28 USD</p>
-                    <p class="old-price">48.56</p>
-                  </div>
-                  <a href="" class="links-general buy-btn">Buy now</a>
-                </div>
+                </article>
               </li>
-              <li class="random-products-item">
-                <a href="" class="links-general random-prod-link">
-                  <div class="pic-wrapper">
-                    <!-- <div class="discount">- 36 %</div> -->
+              <li class="cards__item cards__item--quatro">
+                <article class="product">
+                  <div class="product__thumb">
+                    <a href="" class="links-general product__link">
+                      <div class="product__img-wrapper">
+                        <div
+                          class="product__discount animate__animated animate__heartBeat"
+                        >
+                          - 50 %
+                        </div>
+                      </div>
+                      <h3 class="product__title">Product Title</h3>
+                    </a>
+                    <p class="product__description">
+                      Space for a small product description
+                    </p>
+                    <div class="product__price-tag">
+                      <div class="product__price-wrapper">
+                        <p class="product__new-price">5 USD</p>
+                        <p class="product__old-price">10 USD</p>
+                      </div>
+                      <button type="button" class="buy-btn">Buy now</button>
+                    </div>
                   </div>
-                  <h3 class="product-title">Product Title</h3>
-                  <p class="product-descr">
-                    Space for a small product description
-                  </p>
-                </a>
-                <div class="price-buy-wrapper">
-                  <div class="price">
-                    <p class="price-tag">1.12 USD</p>
-                    <!-- <p class="old-price">48.56</p> -->
-                  </div>
-                  <a href="" class="links-general buy-btn">Buy now</a>
-                </div>
+                </article>
               </li>
             </ul>
           </div>
@@ -824,12 +861,12 @@
       </section>
       <!-- BLOG SECTION -->
       <section class="blog">
-        <div class="container">
-          <div class="section-header-wrapper">
-            <h2>Read our Blog posts</h2>
+        <div class="container blog__container">
+          <div class="blog__header">
+            <h2 class="blog__title">Read our Blog posts</h2>
             <button class="top-btn">
               Go to Blog
-              <svg class="top-btn-icon">
+              <svg class="top-btn__icon">
                 <use href="./images/icons.svg#icon-green-arrow-right"></use>
               </svg>
             </button>

@@ -13,4 +13,7 @@
     border: 1px solid $thumb-border-grey;
     border-radius: 12px;
   }
+  &__item--quatro {
+    width: calc((100% - 96px) / 4);
+  }
 }

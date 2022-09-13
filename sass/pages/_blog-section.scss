@@ -1,17 +1,25 @@
 /* BLOG SECTION  */
 
-.blog .container {
-  padding-top: 64px;
-  padding-bottom: 64px;
+.blog {
+  &__container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
 }
+
 .articles-list {
   display: flex;
   justify-content: space-between;
   column-gap: 31.5px;
 }
-/* .articles-list-item + .articles-list-item {
-  margin-left: 31.5px;
-} */
+
 .articles-list-item > img {
   display: block;
 }

@@ -1,20 +1,5 @@
-/* FEEDBACK SECTION*/
-
-.feedback {
-  padding-top: 64px;
-  padding-bottom: 64px;
-  overflow: hidden;
-}
-.feedback .container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 32px;
-}
-.feedback h2 {
-  margin: 0;
-}
-
 /* Slider */
+
 .swiper {
   width: 1170px;
   margin: 0 auto;
@@ -36,8 +21,8 @@
   margin-bottom: 24px;
   position: relative;
   z-index: 0;
-  background-color: var(--main-white);
-  border: 1px solid var(--quote-border-grey);
+  background-color: $main-white;
+  border: 1px solid $quote-border-grey;
   border-radius: 12px;
 }
 
@@ -55,61 +40,61 @@
 }
 .swiper-slide:nth-child(1)::after {
   background-image: url("../images/customer1.jpg");
-  background-color: var(--text-pale-grey);
+  background-color: $text-pale-grey;
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(2)::after {
   background-image: url("../images/customer2.jpg");
-  background-color: var(--text-pale-grey);
+  background-color: $text-pale-grey;
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(3)::after {
   background-image: url("../images/customer3.jpg");
-  background-color: var(--text-pale-grey);
+  background-color: $text-pale-grey;
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(4)::after {
   background-image: url("../images/customer4.jpg");
-  background-color: var(--text-pale-grey);
+  background-color: $text-pale-grey;
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(5)::after {
   background-image: url("../images/customer5.jpg");
-  background-color: var(--text-pale-grey);
+  background-color: $text-pale-grey;
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(6)::after {
   background-image: url("../images/customer6.jpg");
-  background-color: var(--text-pale-grey);
+  background-color: $text-pale-grey;
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(7)::after {
   background-image: url("../images/customer7.jpg");
-  background-color: var(--text-pale-grey);
+  background-color: $text-pale-grey;
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(8)::after {
   background-image: url("../images/customer8.jpg");
-  background-color: var(--text-pale-grey);
+  background-color: $text-pale-grey;
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(9)::after {
   background-image: url("../images/customer9.jpg");
-  background-color: var(--text-pale-grey);
+  background-color: $text-pale-grey;
   background-position: center;
   background-size: contain;
 }
 .swiper-slide:nth-child(10)::after {
   background-image: url("../images/customer10.jpg");
-  background-color: var(--text-pale-grey);
+  background-color: $text-pale-grey;
   background-position: center;
   background-size: contain;
 }
@@ -125,19 +110,28 @@
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
-  color: var(--text-pale-grey);
+  color: $text-pale-grey;
 }
+
 .swiper-button-prev {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 .swiper-button-next {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 1;
 }
-.swiper-button-prev,
+.swiper-button-prev {
+  width: 88px;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
 .swiper-button-next {
   width: 88px;
   height: 100%;
@@ -145,8 +139,8 @@
   border: none;
   background-color: transparent;
 }
-.swiper-button-next:before,
-.swiper-button-prev:before {
+.swiper-button-next::before,
+.swiper-button-prev::before {
   content: "";
   position: absolute;
   top: 0;
@@ -160,8 +154,9 @@
     rgba(255, 255, 255, 0) 100%
   );
   opacity: 0.7;
-  z-index: 1;
+  z-index: 2;
 }
+
 .swiper-button-next:before {
   transform: rotate(180deg);
 }
@@ -180,5 +175,13 @@
   transform: translateY(-50%);
   width: 32px;
   max-height: 48px;
-  z-index: 2;
+  z-index: 3;
+  @include transition(fill);
+}
+
+.swiper-button-prev:hover .btn-prev-icon,
+.swiper-button-prev:focus .btn-prev-icon,
+.swiper-button-next:hover .btn-next-icon,
+.swiper-button-next:focus .btn-next-icon {
+  fill: $accent-green;
 }

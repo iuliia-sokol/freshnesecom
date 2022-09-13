@@ -1,7 +1,9 @@
 .top-btn {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 6.5px 12px;
-  background-color: $main-white;
+  background-color: transparent;
   border: none;
   border-radius: 12px;
   font-weight: 700;
@@ -9,12 +11,22 @@
   line-height: 1.47;
   color: $main-black;
   text-align: center;
-}
-.top-btn-icon {
-  width: 16px;
-  height: 16px;
-  margin-left: 6px;
-  transform: translate(0, 3px);
-  fill: none;
-  stroke: $accent-green;
+  @include transition(transform);
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    transition: transform 300ms linear 100ms;
+  }
+
+  &:hover &__icon,
+  &:focus &__icon {
+    transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }

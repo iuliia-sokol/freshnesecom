@@ -9,4 +9,10 @@
   line-height: 1.47;
   color: $main-white;
   text-align: center;
+  @include transition(transform);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }

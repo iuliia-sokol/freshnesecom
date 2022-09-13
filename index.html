@@ -23,85 +23,106 @@
   <body>
     <header>
       <div class="container header">
-        <!-- HEADER TOP BAR -->
-        <div class="top-bar">
-          <ul class="list-general contacts">
-            <li class="contacts__item">
-              <a href="" class="links-general contacts__link">Chat with us</a>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+380447777666" class="links-general contacts__link"
-                >+38 044 7777 666</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a
-                href="mailto:info@freshnesecom.com"
-                class="links-general contacts__link"
-                >info@freshnesecom.com</a
-              >
-            </li>
-          </ul>
-          <ul class="list-general nav">
-            <li class="nav__item">
-              <a href="" class="links-general">Blog</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="links-general">About Us</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="links-general">Careers</a>
-            </li>
-          </ul>
-        </div>
-        <!-- HEADER MIDDLE BAR -->
-        <ul class="list-general middle-bar">
-          <li class="middle-bar__item">
-            <a href="./index.html" class="links-general logo">
-              <svg class="logo__icon">
-                <use href="./images/icons.svg#icon-freshnesecom"></use>
-              </svg>
-            </a>
+        <ul class="list-general header__list">
+          <li class="header__item">
+            <!-- HEADER TOP BAR -->
+            <div class="top-bar">
+              <ul class="list-general contacts">
+                <li class="contacts__item">
+                  <a href="" class="links-general contacts__link"
+                    >Chat with us</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a
+                    href="tel:+380447777666"
+                    class="links-general contacts__link"
+                    >+38 044 7777 666</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a
+                    href="mailto:info@freshnesecom.com"
+                    class="links-general contacts__link"
+                    >info@freshnesecom.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="list-general nav">
+                <li class="nav__item">
+                  <a href="" class="links-general">Blog</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="links-general">About Us</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="links-general">Careers</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="middle-bar__item search">
-            <div class="search__wrapper">
-              <form
-                action="javascript:void(0);"
-                role="search"
-                class="search__form"
-              >
-                <div class="select">
-                  <button class="select__btn">All categories</button>
-                  <svg class="select__icon">
-                    <use href="./images/icons.svg#icon-green-arrow-down"></use>
+          <!-- HEADER MIDDLE BAR -->
+          <li class="header__item">
+            <ul class="list-general middle-bar">
+              <!-- Logo -->
+              <li class="middle-bar__item">
+                <a href="./index.html" class="links-general logo">
+                  <svg class="logo__icon">
+                    <use href="./images/icons.svg#icon-freshnesecom"></use>
                   </svg>
-                  <ul class="list-general select__list">
-                    <li data-value="all categories" class="select__option">
-                      All categories
-                    </li>
-                    <li data-value="bakery" class="select__option">Bakery</li>
-                    <li
-                      data-value="fruit and vegetables"
-                      class="select__option"
-                    >
-                      Fruit and vegetables
-                    </li>
-                    <li data-value="meat and fish" class="select__option">
-                      Meat and fish
-                    </li>
-                    <li data-value="drinks" class="select__option">Drinks</li>
-                    <li data-value="kitchen" class="select__option">Kitchen</li>
-                    <li data-value="special nutrition" class="select__option">
-                      Special nutrition
-                    </li>
-                    <li data-value="baby" class="select__option">Baby</li>
-                    <li data-value="pharmacy" class="select__option">
-                      Pharmacy
-                    </li>
-                  </ul>
-                </div>
+                </a>
+              </li>
+              <!-- Search -->
+              <li class="middle-bar__item search">
+                <div class="search__wrapper">
+                  <form
+                    action="javascript:void(0);"
+                    role="search"
+                    class="search__form"
+                  >
+                    <div class="select">
+                      <button class="select__btn">All categories</button>
+                      <svg class="select__icon">
+                        <use
+                          href="./images/icons.svg#icon-green-arrow-down"
+                        ></use>
+                      </svg>
+                      <ul class="list-general select__list">
+                        <li data-value="all categories" class="select__option">
+                          All categories
+                        </li>
+                        <li data-value="bakery" class="select__option">
+                          Bakery
+                        </li>
+                        <li
+                          data-value="fruit and vegetables"
+                          class="select__option"
+                        >
+                          Fruit and vegetables
+                        </li>
+                        <li data-value="meat and fish" class="select__option">
+                          Meat and fish
+                        </li>
+                        <li data-value="drinks" class="select__option">
+                          Drinks
+                        </li>
+                        <li data-value="kitchen" class="select__option">
+                          Kitchen
+                        </li>
+                        <li
+                          data-value="special nutrition"
+                          class="select__option"
+                        >
+                          Special nutrition
+                        </li>
+                        <li data-value="baby" class="select__option">Baby</li>
+                        <li data-value="pharmacy" class="select__option">
+                          Pharmacy
+                        </li>
+                      </ul>
+                    </div>
 
-                <!-- 
+                    <!-- 
                     <div class="select">
                     <select
                     name="categories"
@@ -144,123 +165,143 @@
                   </svg>
                 </div> -->
 
-                <div class="search__input-wrapper">
-                  <input
-                    type="text"
-                    id="search"
-                    name="search"
-                    autocomplete="off"
-                    placeholder="Search Products, categories ..."
-                    class="search__input"
-                  />
-                  <button
-                    type="submit"
-                    aria-label="search button"
-                    class="search__btn"
-                  >
-                    <svg class="search__icon">
-                      <use href="./images/icons.svg#icon-search"></use>
-                    </svg>
-                  </button>
+                    <div class="search__input-wrapper">
+                      <input
+                        type="text"
+                        id="search"
+                        name="search"
+                        autocomplete="off"
+                        placeholder="Search Products, categories ..."
+                        class="search__input"
+                      />
+                      <button
+                        type="submit"
+                        aria-label="search button"
+                        class="search__btn"
+                      >
+                        <svg class="search__icon">
+                          <use href="./images/icons.svg#icon-search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
                 </div>
-              </form>
-            </div>
-          </li>
-          <li class="middle-bar__item controls">
-            <ul class="list-general controls__list">
-              <li class="controls__item">
-                <a href="" class="links-general controls__link">
-                  <svg class="controls__icon">
-                    <use href="./images/icons.svg#icon-user"></use>
-                  </svg>
-                </a>
               </li>
-              <li class="controls__item controls__item--bag">
-                <a href="" class="links-general controls__link">
-                  <svg class="controls__icon">
-                    <use href="./images/icons.svg#icon-shopping-bag"></use>
-                  </svg>
-                  <div class="controls__indicator">4</div>
-                </a>
+              <li class="middle-bar__item controls">
+                <ul class="list-general controls__list">
+                  <li class="controls__item">
+                    <a href="" class="links-general controls__link">
+                      <svg class="controls__icon">
+                        <use href="./images/icons.svg#icon-user"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="controls__item controls__item--bag">
+                    <a href="" class="links-general controls__link">
+                      <svg class="controls__icon">
+                        <use href="./images/icons.svg#icon-shopping-bag"></use>
+                      </svg>
+                      <div class="controls__indicator">4</div>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
+          </li>
+          <li class="header__item">
+            <!-- HEADER MENU -->
+            <section class="menu">
+              <div class="container menu__wrapper">
+                <h2 class="visually-hidden">Menu section</h2>
+                <ul class="list-general menu__list">
+                  <li class="menu__item">
+                    <a href="" class="links-general menu__link"
+                      >Bakery
+                      <svg class="menu__icon">
+                        <use
+                          href="./images/icons.svg#icon-green-arrow-down"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="links-general menu__link"
+                      >Fruit and vegetables
+                      <svg class="menu__icon">
+                        <use
+                          href="./images/icons.svg#icon-green-arrow-down"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="links-general menu__link"
+                      >Meat and fish
+                      <svg class="menu__icon">
+                        <use
+                          href="./images/icons.svg#icon-green-arrow-down"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="links-general menu__link"
+                      >Drinks
+                      <svg class="menu__icon">
+                        <use
+                          href="./images/icons.svg#icon-green-arrow-down"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="links-general menu__link"
+                      >Kitchen
+                      <svg class="menu__icon">
+                        <use
+                          href="./images/icons.svg#icon-green-arrow-down"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="links-general menu__link"
+                      >Special nutrition
+                      <svg class="menu__icon">
+                        <use
+                          href="./images/icons.svg#icon-green-arrow-down"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="links-general menu__link"
+                      >Baby
+                      <svg class="menu__icon">
+                        <use
+                          href="./images/icons.svg#icon-green-arrow-down"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="links-general menu__link"
+                      >Pharmacy
+                      <svg class="menu__icon">
+                        <use
+                          href="./images/icons.svg#icon-green-arrow-down"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <!-- MENU SECTION -->
-      <section class="menu">
-        <div class="container">
-          <h2 class="visually-hidden">Menu section</h2>
-          <ul class="list-general menu-categories">
-            <li class="menu-categories-item">
-              <a href="" class="links-general"
-                >Bakery
-                <svg class="categories-icon">
-                  <use href="./images/icons.svg#icon-green-arrow-down"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-categories-item">
-              <a href="" class="links-general"
-                >Fruit and vegetables
-                <svg class="categories-icon">
-                  <use href="./images/icons.svg#icon-green-arrow-down"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-categories-item">
-              <a href="" class="links-general"
-                >Meat and fish
-                <svg class="categories-icon">
-                  <use href="./images/icons.svg#icon-green-arrow-down"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-categories-item">
-              <a href="" class="links-general"
-                >Drinks
-                <svg class="categories-icon">
-                  <use href="./images/icons.svg#icon-green-arrow-down"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-categories-item">
-              <a href="" class="links-general"
-                >Kitchen
-                <svg class="categories-icon">
-                  <use href="./images/icons.svg#icon-green-arrow-down"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-categories-item">
-              <a href="" class="links-general"
-                >Special nutrition
-                <svg class="categories-icon">
-                  <use href="./images/icons.svg#icon-green-arrow-down"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-categories-item">
-              <a href="" class="links-general"
-                >Baby
-                <svg class="categories-icon">
-                  <use href="./images/icons.svg#icon-green-arrow-down"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-categories-item">
-              <a href="" class="links-general"
-                >Pharmacy
-                <svg class="categories-icon">
-                  <use href="./images/icons.svg#icon-green-arrow-down"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
       <!-- HERO SECTION -->
       <section class="hero">
         <div class="container">

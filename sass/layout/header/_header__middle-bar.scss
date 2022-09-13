@@ -161,16 +161,13 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    // pointer-events: none;
-    opacity: 1;
-    transition: opacity 250ms linear, transform 300ms linear;
+    transition: transform 300ms linear;
   }
   &__btn:hover + &__icon,
   &__btn:focus + &__icon,
   &__btn:active + &__icon {
     transform: translateY(-50%) rotate(90deg) translateY(-50%);
-    @include transition(opacity, transform);
-    // transition: opacity 250ms linear, transform 300ms linear;
+    transition: transform 300ms linear;
   }
 
   &__list {

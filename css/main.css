@@ -294,21 +294,18 @@ h2 {
   right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  opacity: 1;
-  -webkit-transition: opacity 250ms linear, -webkit-transform 300ms linear;
-  transition: opacity 250ms linear, -webkit-transform 300ms linear;
-  transition: opacity 250ms linear, transform 300ms linear;
-  transition: opacity 250ms linear, transform 300ms linear, -webkit-transform 300ms linear;
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
 }
 .select__btn:hover + .select__icon, .select__btn:focus + .select__icon, .select__btn:active + .select__icon {
   -webkit-transform: translateY(-50%) rotate(90deg) translateY(-50%);
           transform: translateY(-50%) rotate(90deg) translateY(-50%);
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: opacity, transform;
-  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
 }
 .select__list {
   display: none;
@@ -418,8 +415,7 @@ h2 {
 .menu {
   background-color: #f9f9f9;
 }
-
-.menu-categories {
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,15 +432,29 @@ h2 {
   line-height: 1.47;
   color: #151515;
 }
-
-.categories-icon {
+.menu__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__icon {
   width: 12px;
   height: 12px;
-  padding-left: 2.5px;
-  padding-right: 2.5px;
-  margin-left: 2px;
-  -webkit-transform: translate(0, 1px);
-          transform: translate(0, 1px);
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
+}
+.menu__link:hover .menu__icon, .menu__link:focus .menu__icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
 }
 
 .aside-wrapper {

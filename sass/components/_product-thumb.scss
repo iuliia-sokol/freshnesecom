@@ -1,10 +1,13 @@
 .product {
-  &__link {
+  &__img-wrapper {
     @include transition(transform);
   }
+  &__link {
+    display: block;
+  }
 
-  &__link:hover,
-  &__link:focus {
+  &__link:hover &__img-wrapper,
+  &__link:focus &__img-wrapper {
     transform: scale(1.1);
   }
 

@@ -16,3 +16,8 @@
 .image-display {
   display: block;
 }
+
+.animate__heartBeat {
+  animation-iteration-count: infinite;
+  animation-duration: 2000ms;
+}

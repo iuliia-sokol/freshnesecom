@@ -85,13 +85,22 @@
                         class="search__form"
                       >
                         <div class="select">
-                          <button class="select__btn">All categories</button>
+                          <button
+                            class="select__btn"
+                            aria-expanded="false"
+                            aria-controls="select__list"
+                          >
+                            All categories
+                          </button>
                           <svg class="select__icon">
                             <use
                               href="./images/icons.svg#icon-green-arrow-down"
                             ></use>
                           </svg>
-                          <ul class="list-general select__list">
+                          <ul
+                            class="list-general select__list"
+                            aria-label="select product category"
+                          >
                             <li
                               data-value="all categories"
                               class="select__option"

@@ -15,8 +15,10 @@ const searchForm = document.querySelector(".search__form");
 const searchBtn = document.querySelector(".search__btn");
 
 selectBtn.addEventListener("click", function () {
+  const expanded = selectBtn.getAttribute("aria-expanded") === "true" || false;
   selectList.classList.toggle("select__list--visible");
   searchForm.classList.toggle("search__form--selected");
+  selectBtn.setAttribute("aria-expanded", !expanded);
 });
 
 selectOptions.forEach(function (listItem) {

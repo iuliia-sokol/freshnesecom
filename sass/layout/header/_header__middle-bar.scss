@@ -1,18 +1,20 @@
 /* Middle bar */
 
 .middle-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   & .logo {
     display: inline-block;
     max-width: 177px;
     max-height: 50px;
     padding-top: 16px;
     padding-bottom: 16px;
+    @include transition(transform);
 
     &__icon {
       width: 177px;
@@ -20,8 +22,13 @@
       fill: $main-black;
     }
   }
-}
 
+  & .logo:hover,
+  & .logo:focus {
+    transform: scale(1.1);
+    @include transition(transform);
+  }
+}
 // SEARCH PANEL
 
 .search {
@@ -40,6 +47,7 @@
   &__form--selected {
     border-bottom-left-radius: 0;
   }
+
   &__input-wrapper {
     display: flex;
     justify-content: space-between;
@@ -151,6 +159,7 @@
     font-weight: 700;
     font-size: 15px;
     line-height: 1.467;
+    @include transition(transform);
   }
 
   &__icon {
@@ -163,11 +172,19 @@
     transform: translateY(-50%);
     transition: transform 300ms linear;
   }
+
+  &__btn:hover,
+  &__btn:focus,
+  &__btn:active {
+    transform: scale(1.1);
+    @include transition(transform);
+  }
+
   &__btn:hover + &__icon,
   &__btn:focus + &__icon,
   &__btn:active + &__icon {
     transform: translateY(-50%) rotate(90deg) translateY(-50%);
-    transition: transform 300ms linear;
+    transition: transform 300ms linear 100ms;
   }
 
   &__list {
@@ -188,7 +205,6 @@
     line-height: 1.467;
     cursor: pointer;
     z-index: 1;
-    @include transition(opacity);
   }
 
   &__list--visible {

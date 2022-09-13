@@ -25,9 +25,9 @@ h2 {
 }
 
 .container {
-  width: 1200px;
+  width: 1260px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 45px;
 }
 
 .list-general {
@@ -60,6 +60,7 @@ h2 {
 
 /* Upper links */
 .top-bar {
+  max-height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +84,6 @@ h2 {
   font-size: 12px;
   line-height: 1.33;
   color: #151515;
-  cursor: pointer;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: text-shadow, -webkit-transform;
@@ -104,6 +104,15 @@ h2 {
   transition-property: text-shadow, -webkit-transform;
   transition-property: transform, text-shadow;
   transition-property: transform, text-shadow, -webkit-transform;
+}
+.top-bar .contacts__link {
+  -webkit-transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.top-bar .contacts__link:focus {
+  font-size: 15px;
+  -webkit-transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .top-bar .nav {
   display: -webkit-box;
@@ -136,9 +145,18 @@ h2 {
   transition-property: transform, text-shadow;
   transition-property: transform, text-shadow, -webkit-transform;
 }
+.top-bar .nav__link {
+  -webkit-transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.top-bar .nav__link:focus {
+  font-size: 15px;
+  -webkit-transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* Middle bar */
-.middle-bar {
+.middle-bar__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,11 +175,23 @@ h2 {
   max-height: 50px;
   padding-top: 16px;
   padding-bottom: 16px;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .middle-bar .logo__icon {
   width: 177px;
   height: 18px;
   fill: #151515;
+}
+.middle-bar .logo:hover, .middle-bar .logo:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .search__form {
@@ -285,6 +315,10 @@ h2 {
   font-weight: 700;
   font-size: 15px;
   line-height: 1.467;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .select__icon {
   width: 16px;
@@ -299,13 +333,21 @@ h2 {
   transition: transform 300ms linear;
   transition: transform 300ms linear, -webkit-transform 300ms linear;
 }
+.select__btn:hover, .select__btn:focus, .select__btn:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .select__btn:hover + .select__icon, .select__btn:focus + .select__icon, .select__btn:active + .select__icon {
   -webkit-transform: translateY(-50%) rotate(90deg) translateY(-50%);
           transform: translateY(-50%) rotate(90deg) translateY(-50%);
-  -webkit-transition: -webkit-transform 300ms linear;
-  transition: -webkit-transform 300ms linear;
-  transition: transform 300ms linear;
-  transition: transform 300ms linear, -webkit-transform 300ms linear;
+  -webkit-transition: -webkit-transform 300ms linear 100ms;
+  transition: -webkit-transform 300ms linear 100ms;
+  transition: transform 300ms linear 100ms;
+  transition: transform 300ms linear 100ms, -webkit-transform 300ms linear 100ms;
 }
 .select__list {
   display: none;
@@ -329,8 +371,6 @@ h2 {
   line-height: 1.467;
   cursor: pointer;
   z-index: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .select__list--visible {
   display: inline-block;
@@ -439,6 +479,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__icon {
   width: 12px;
@@ -449,12 +493,23 @@ h2 {
   transition: transform 300ms linear, -webkit-transform 300ms linear;
 }
 .menu__link:hover .menu__icon, .menu__link:focus .menu__icon {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transition: -webkit-transform 300ms linear;
-  transition: -webkit-transform 300ms linear;
-  transition: transform 300ms linear;
-  transition: transform 300ms linear, -webkit-transform 300ms linear;
+  -webkit-transform: rotate(90deg) translateY(-50%);
+          transform: rotate(90deg) translateY(-50%);
+  -webkit-transition: -webkit-transform 300ms linear 100ms;
+  transition: -webkit-transform 300ms linear 100ms;
+  transition: transform 300ms linear 100ms;
+  transition: transform 300ms linear 100ms, -webkit-transform 300ms linear 100ms;
+}
+.menu__link:hover, .menu__link:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: 0px 1px 3px rgba(70, 118, 10, 0.12);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: text-shadow, -webkit-transform;
+  transition-property: text-shadow, -webkit-transform;
+  transition-property: transform, text-shadow;
+  transition-property: transform, text-shadow, -webkit-transform;
 }
 
 .aside-wrapper {

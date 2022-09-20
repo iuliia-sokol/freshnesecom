@@ -308,6 +308,7 @@ h2 {
   position: absolute;
   top: 50%;
   right: 0;
+  pointer-events: none;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: -webkit-transform 300ms linear 100ms;
